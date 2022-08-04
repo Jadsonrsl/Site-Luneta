@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/marca-title.png" type="image/x-icon">    
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style-contato.css">
+    <script src="./aprendizado.js" defer></script>
+    <title>Omega Engenharia</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <img class="logo-cabecalho" height="80rem" src="img/logo.png" alt="Logo">
+        <div class="social-nav-cabecalho">
+            <div id="social" class="social-cabecalho">
+                <a class="item-social-cabecalho" href="https://www.instagram.com/omg_construcoes/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="img/Instagram.png" alt="Instagram"></a>
+                <a class="item-social-cabecalho" href="https://web.facebook.com/gigliola.almeida" target="_blank"><img src="img/Facebook.png" alt="Facebook"></a>
+                <a class="item-social-cabecalho" href="https://www.instagram.com/omg_construcoes/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="img/Whatsapp.png" alt="WhatsApp"></a>     
+            </div>                             
+            <Nav class="nav-cabecalho">
+                <button aria-pressed="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a class="item-nav-cabecalho" href="index.html">A Empresa</a></li>
+                    <li><a class="item-nav-cabecalho" href="servicos.html">Serviços</a></li>
+                    <li><a class="item-nav-cabecalho" href="#">Contato</a></li>
+                </ul>             
+            </Nav>
+        </div>
+    </header>
+    <!-- Banner Topo -->
+    <main class="main">
+        <section class="container-banner-topo" id="banner">
+            <div class="background-banner-topo">
+                <div class="imagem-servico-topo">
+                    
+                </div>
+                <div class="texto-banner-topo">
+                    <h1>Entre em Contato<br>E Peça Seu Orçamento</h1>                    
+                </div>
+            </div>
+        </section>
+        <section class="container-texto-formulario">
+            <div class="container-texto-formulario-b">
+                <div class="texto-container">
+                    <h2>A Omega Engenharia tem<br><strong class="strong">Prazer em te Atender!</strong></h2>
+                    <p>Solicite seu Orçamento e Ganhe Grátis uma<br>Visita Técnica 
+                    para Entendermos<br>Melhor a sua Necessidade.
+                    </p>
+                </div>
+                <form class="formulario-container" action="" method="post">
+                    <div class="caixa">                
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome e sobrenome">                
+                    </div>
+                    <div class="caixa">                
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">                
+                    </div>
+                    <div class="caixa">                
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="7" placeholder="Digite sua mensagem"></textarea>                
+                    </div>
+                    <button class="enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container-footer">
+        <p>Desenvolvido por: Jadson Ribeiro</p>
+    </footer>
+    
+</body>
+</html>

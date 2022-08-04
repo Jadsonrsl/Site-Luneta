@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+/* Style Cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 0 25px 0;
+    border-bottom: 2px solid rgba(71, 2, 5, 0.5);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+
+.social-nav-cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+        
+}
+
+.social-cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.nav-cabecalho ul {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.item-social-cabecalho {
+    opacity: 0.5;
+}
+
+.item-social-cabecalho:hover {
+    opacity: 0.1;
+    transition: 1s;
+    padding: 2px;
+    box-shadow: 3px 3px  rgba(0, 0, 0, 0.5);
+}
+
+.item-nav-cabecalho {
+    font-family: 'Ubuntu', sans-serif;
+    color: #470205;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.item-nav-cabecalho:hover {
+    font-size: 1.4rem;    
+    opacity: 1.0;
+    transition: 0.5s;    
+}
+
+/* Style main */
+
+.main {
+    display: block;
+    width: 100%;
+}
+
+
+/* Style banner-topo */
+
+.container-banner-topo {
+    display: block;
+    border-bottom: 2px solid rgba(71, 2, 5, 0.5);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    
+}
+
+.background-banner-topo {
+    display: block;
+    width: 100%;   
+    height: 25rem;
+    background-color: #666;  
+}
+
+.imagem-servico-topo {
+	background: url(../img/banner-servico.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+	position: absolute;
+    width: 100%;
+}         
+
+.imagem-servico-topo {
+    display: block;
+    align-content: center;
+    height: 25rem;
+    opacity: 0.6;
+}
+
+
+.texto-banner-topo {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 25rem;
+	justify-content: center;
+	font-family: 'Ubuntu', sans-serif;	
+	position: relative;
+	z-index: 1;
+}
+
+.texto-banner-topo h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	color: #470205;
+	text-align: start;
+	line-height: 100px;
+	margin-left: auto;
+	text-shadow: 2px 1px 6px #fff;
+	width: 94%;
+}
+
+
+
+/* Style Section */ /* Contato */
+
+.container-texto-formulario {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: #fcd036;    
+    padding: 50px 0 70px 0;
+    justify-content: center;
+}
+
+.container-texto-formulario-b {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-container {
+    width: 45rem;
+    margin: auto;
+} 
+
+.texto-container h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #fff;
+    line-height: 70px;
+    justify-content: center;
+}
+
+.texto-container h2 strong {
+    font-size: 3.8rem;    
+}
+
+.texto-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #470205;    
+    line-height: 38px;
+}
+
+.formulario-container {
+    width: 25rem;
+    margin: auto;   
+}
+
+.formulario-container, .enviar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #470205;
+    margin-top: 20px;
+    display: grid;
+}
+
+.caixa {
+    margin-top: 20px;
+    display: block;
+    display: grid;    
+}
+
+.caixa label {
+    margin-bottom: 10px;
+}
+
+#nome, #email {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+#mensagem {
+    border-radius: 5px 30px 5px 30px;
+    border: none;
+}
+
+.enviar {    
+    width: 70%;
+    height: 45px;
+    align-items: center;
+    background-color: #470205;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+.enviar:hover {
+    background-color: #fcd036;    
+    border: solid 1px #470205;
+    transition: 2s;
+    height: 50px;
+    font-size: 2rem;
+    color: #470205;
+}
+
+
+/* Style Footer */
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #280103;
+    height: 150px;    
+    justify-content: center;
+    align-items: end;   
+}
+
+.container-footer p {
+    font-size: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;        
+}
+
+/* Style Menu Mobile */
+
+#btn-mobile {
+    display: none;
+}
+
+/* Style Responsivo */
+
+@media (max-width: 780px) {
+    .logo-cabecalho {
+        height: 4rem;    
+    }
+    
+    .nav-cabecalho ul {
+        width: 17rem;
+        gap: 35px;
+    }
+
+    .item-nav-cabecalho {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+        position: relative;        
+    }
+
+    .logo-cabecalho {
+        height: 60px;
+    }
+
+    .item-nav-cabecalho {
+        color: #fff;
+        margin: 0 auto;
+        padding: 3px 50px;                           
+    }
+    
+    #menu li {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;                     
+    }
+
+    .social-cabecalho{
+        position: absolute;       
+        gap: 30px;
+        right: 10px;
+        top: 100px;
+        display: none;                                                                                      
+    }
+
+    .social-cabecalho img {
+        height: 25px;        
+    }
+       
+
+    #menu {
+        display: block;       
+        position: absolute;
+        width: 100%;
+        height: 500px;        
+        background-color: #470205;
+        z-index: 1000;
+        transition: .6s;
+        right: 0;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        margin-top: 39px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);                            
+    }
+
+    .nav-cabecalho.active #menu {    
+        height: 126px;
+        visibility: visible;
+        overflow-y: auto;                       
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        color: #470205;
+        border-top: 2px solid;
+        width: 25px;        
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 8px;
+        transition: .3s;
+        position: relative;
+    }
+    
+    nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    nav.active #hamburger::before {
+        transform: rotate(135deg);
+        filter: drop-shadow(2px 2px 3px rgba(75, 75, 75, 0.5));
+    }
+
+    nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -10px;
+        filter: drop-shadow(0.3px 0.3px 5px rgba(75, 75, 75, 0.7))        
+    }
+
+    
+    #banner {    
+        transition: 0.6s;
+    }
+
+   b.active {
+
+    margin-top: 140px;
+   }
+
+   #banner.active {
+    margin-top: 126px;
+   }
+    
+}
+
+    
+
+
+

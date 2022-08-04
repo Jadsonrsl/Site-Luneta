@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+/* Style Cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 0 25px 0;
+    border-bottom: 2px solid rgba(71, 2, 5, 0.5);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+
+.social-nav-cabecalho {
+    display: flex;        
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;            
+}
+
+.social-cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.nav-cabecalho ul {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.item-social-cabecalho {
+    opacity: 0.5;
+}
+
+.item-social-cabecalho:hover {
+    opacity: 0.1;
+    transition: 1s;
+    padding: 2px;
+    box-shadow: 3px 3px  rgba(0, 0, 0, 0.5);
+}
+
+.item-nav-cabecalho {
+    font-family: 'Ubuntu', sans-serif;
+    color: #470205;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.item-nav-cabecalho:hover {
+    font-size: 1.4rem;    
+    opacity: 1.0;
+    transition: 0.5s;    
+}
+
+/* Style main */
+
+.main {
+    display: block;
+    width: 100%;
+}
+
+
+/* Style banner-topo */
+
+.container-banner-topo {
+    display: block;
+    border-bottom: 2px solid rgba(71, 2, 5, 0.5);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    
+}
+
+.background-banner-topo {
+    display: block;
+    width: 100%;   
+    height: 25rem;
+    background-color: #000;  
+}
+
+.imagem-banner-topo {
+	background: url(../img/banner-home.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+	position: absolute;
+    width: 100%;
+}         
+
+.imagem-banner-topo {
+    display: block;
+    align-content: center;
+    height: 25rem;
+    opacity: 0.2;
+}
+
+.texto-banner-topo {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 25rem;
+	justify-content: center;
+	font-family: 'Ubuntu', sans-serif;
+	gap: 15px;
+	position: relative;
+	z-index: 1;
+}
+
+.texto-banner-topo h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fcd036;
+    text-align: center;        
+}
+
+.texto-banner-topo h3 {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;   
+}
+
+
+/* Style artigo */
+
+
+.container-artigo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+    width: 90%;
+    
+}
+
+.artigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    padding: 30px 0;
+    gap: 50px;
+}
+
+.imagem-artigo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.imagem-artigo {
+    background-image: url(../img/imagem-artigo.jpg);
+    background-repeat: no-repeat;    
+    width: 600px;
+    height: 400px;
+    background-position: center center;
+    border-radius: 50px 150px;
+    box-shadow: 3px 3px 6px #555
+    
+}
+
+.imagem-artigo {
+    margin-bottom: 30px;
+}
+
+
+.titulo-artigo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    color: #470205;
+    margin-left: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+   
+}
+
+.paragrafo-artigo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #a98505;
+    line-height: 24px;
+}
+
+.texto-imagem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;   
+    align-items: center;
+    gap: 50px;
+}
+
+.h2-texto-imagem {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #fcd036;
+  }
+
+  
+.h3-texto-imagem {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: #470205;
+}
+
+
+/* Style Footer */
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #280103;
+    height: 150px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: end;   
+}
+
+.container-footer p {
+    font-size: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+
+/* Style Menu Mobile */
+
+#btn-mobile {
+    display: none;
+}
+
+/* Style Responsivo */
+
+
+@keyframes hueRotateAnimation {
+	from {filter: hue-rotate(0deg)}
+	to {filter: hue-rotate(360deg)}
+}
+
+.imagem-artigo {
+	animation: hueRotateAnimation 4s linear infinite;
+}
+
+@media (max-width: 780px) {
+    .logo-cabecalho {
+        height: 4rem;    
+    }
+    
+    .nav-cabecalho ul {
+        width: 17rem;
+        gap: 35px;
+    }
+
+    .item-nav-cabecalho {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+        position: relative;        
+    }
+
+    .logo-cabecalho {
+        height: 60px;
+    }
+
+    .item-nav-cabecalho {
+        color: #fff;
+        margin: 0 auto;
+        padding: 3px 50px;                           
+    }
+    
+    #menu li {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;                     
+    }
+
+    .social-cabecalho{
+        position: absolute;       
+        gap: 30px;
+        right: 10px;
+        top: 100px;
+        display: none;                                                                                      
+    }
+
+    .social-cabecalho img {
+        height: 25px;        
+    }
+       
+
+    #menu {
+        display: block;       
+        position: absolute;
+        width: 100%;
+        height: 500px;        
+        background-color: #470205;
+        z-index: 1000;
+        transition: .6s;
+        right: 0;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        margin-top: 39px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);                            
+    }
+
+    .nav-cabecalho.active #menu {    
+        height: 126px;
+        visibility: visible;
+        overflow-y: auto;                       
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        color: #470205;
+        border-top: 2px solid;
+        width: 25px;        
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 8px;
+        transition: .3s;
+        position: relative;
+    }
+    
+    nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    nav.active #hamburger::before {
+        transform: rotate(135deg);
+        filter: drop-shadow(2px 2px 3px rgba(75, 75, 75, 0.5));
+    }
+
+    nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -10px;
+        filter: drop-shadow(0.3px 0.3px 5px rgba(75, 75, 75, 0.7))        
+    }
+
+    
+    #banner {    
+        transition: 0.6s;
+    }
+
+   b.active {
+
+    margin-top: 140px;
+   }
+
+   #banner.active {
+    margin-top: 126px;
+   }
+    
+}
+
